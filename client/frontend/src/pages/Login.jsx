@@ -23,7 +23,7 @@ const Login = () => {
     e.preventDefault();
 
     try {
-      const response = await fetch("http://localhost:9290/api/auth/Login", {
+      const response = await fetch("https://fullstack-authentication-r5f6.onrender.com//api/auth/Login", {
         method: "POST",
         headers: {
           "Content-Type": "application/json"
