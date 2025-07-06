@@ -1,0 +1,115 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+.loginContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 70vh;
+  background-color: #f5f6fa;
+  border-radius: 5px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.loginCard {
+  width: 350px;
+  padding: 2rem;
+  border-radius: 16px;
+  background-color: white;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.loginHeader h2 {
+  margin: 10px 0 5px;
+  font-size: 24px;
+}
+
+.loginHeader p {
+  margin: 0;
+  color: #666;
+  font-size: 14px;
+}
+
+.loginLogo {
+  font-size: 32px;
+  color: #a881e6;
+}
+
+.loginSocial {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin: 20px 0;
+}
+
+.socialBtn {
+  background-color: #f1f1f1;
+  border: none;
+  padding: 10px;
+  border-radius: 8px;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.divider {
+  margin: 10px 0;
+  font-size: 14px;
+  color: #999;
+}
+
+.loginForm {
+  text-align: left;
+}
+
+.loginForm label {
+  display: block;
+  margin: 10px 0 4px;
+  font-size: 14px;
+  color: #333;
+}
+
+.loginForm input[type="email"],
+.loginForm input[type="password"] {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+}
+
+.passwordField {
+  position: relative;
+}
+
+.loginOptions {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 12px 0;
+  font-size: 13px;
+}
+
+.loginBtn {
+  width: 100%;
+  background: linear-gradient(to right, #a881e6, #7450d6);
+  color: white;
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.signupLink {
+  margin-top: 16px;
+  font-size: 13px;
+  color: #444;
+}
+
+.signupLink a {
+  color: #a881e6;
+  text-decoration: none;
+}
