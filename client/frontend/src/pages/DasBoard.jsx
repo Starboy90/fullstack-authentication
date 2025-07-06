@@ -22,7 +22,7 @@ const DasBoard = () => {
       if(!email)return;
 
       try{
-        const response = await fetch(`http://localhost:9290/api/auth/DasBoard?email=${email}`,{
+        const response = await fetch(`https://fullstack-authentication-r5f6.onrender.com/api/auth/DasBoard?email=${email}`,{
           
            method:"GET",
            headers:{'Content-Type':'application/json'},
