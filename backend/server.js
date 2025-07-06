@@ -5,12 +5,17 @@ const app = express();
 const router = require("../backend/routers/auth-routers");
 const connectDB = require("../backend/utils/db");
 
-const corsOptions = {
-    origin: "http://localhost:5173",
-    methods: "POST",
-    credentials: true, // corrected spelling
+
+    const corsOptions = {
+  origin: [
+    "http://localhost:5173", // for local development
+    "https://fullstack-authentication-six.vercel.app" // Vercel frontend
+  ],
+  methods: ["GET", "POST", "PUT", "DELETE"],
+  credentials: true
 };
 
+const cors = require("cors");
 app.use(cors(corsOptions));
 app.use(express.json());
 app.use("/api/auth", router);
